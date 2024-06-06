@@ -1,0 +1,131 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation bar container */
+.navbar {
+    background-color: black; /* Light background color */
+    padding: 10px 20px;
+}
+
+/* Flex container for navigation items */
+.navdiv {
+    display: flex;
+    justify-content: space-between; /* Space out the logo and the list items */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+}
+
+/* Style for the logo */
+.logo a {
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Black text color */
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Style for the navigation list */
+.nav-list {
+    list-style-type: none; /* Remove bullet points from list */
+    display: flex; /* Display list items in a row */
+    margin-left: auto; /* Push the list to the right */
+    gap: 20px; /* Space between list items */
+}
+
+/* Style for the list items */
+.nav-list li a {
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Bootstrap primary color */
+    font-size: 18px; /* Increase font size */
+}
+
+/* Add some styling for the main content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+input#locationInput {
+    width: calc(100% - 100px);
+    padding: 10px;
+    font-size: 16px;
+}
+
+button#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.weather {
+    display: flex;
+    justify-content: center; /* Center the cells horizontally */
+    gap: 20px; /* Add some space between the cells */
+    margin: 40px auto; /* Center the container horizontally */
+    flex-wrap: wrap; /* Allow the cells to wrap if needed */
+}
+
+/* Style for the weather information cells */
+.weather .col-md-3 {
+    border: 3px solid black; /* Light gray border */
+    padding: 20px; /* Space inside the border */
+    margin: 10px; /* Space outside the border */
+    background-color: #f9f9f9; /* Slightly off-white background */
+    border-radius: 5px; /* Center text within each cell */
+    flex: 1; /* Allow cells to adjust width based on content */
+    max-width: 300px; /* Set a maximum width for each cell */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow-wrap: break-word; /* Break long words to fit within the cell */
+    text-align: center; /* Center text within the cell */
+}
+
+h2{
+    color:aquamarine;
+}
+
+.tat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+/* Style the table */
+table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the table horizontally */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr {
+    transition: opacity 0.3s ease; /* Adjust duration and easing as needed */
+}
+
+/* Apply the transition only when the row is being removed */
+tr.removing {
+    opacity: 0;
+}
+
+/* Add hover effect to rows */
+tr:hover {
+    background-color: #e73f3f;
+}
+
+.remind{
+    text-align: center;
+    margin-top: 10vh; /* Adjust as needed */
+    transform: translateY(-50%);
+}

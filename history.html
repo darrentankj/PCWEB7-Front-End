@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+    />
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navdiv">
+                <div class="logo"><a href='#'>WeatherSave</a></div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <h1 class="remind">Click on a row to delete.</h1>
+    <div class = tat>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Location</th>
+                    <th>Precipitation</th>
+                    <th>Temperature</th>
+                    <th>Time</th>
+                    <th>UV Index</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="script2.js"></script>
+</body>
+</html>
